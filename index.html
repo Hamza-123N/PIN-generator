@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="web_logo.png">
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+
+        <div class="slider-group">
+            <label>Lowercase Letters: <span id="lowerValue">0</span></label>
+            <input type="range" id="lower" min="0" max="10" value="0">
+        </div>
+
+        <div class="slider-group">
+            <label>Uppercase Letters: <span id="upperValue">0</span></label>
+            <input type="range" id="upper" min="0" max="10" value="0">
+        </div>
+
+        <div class="slider-group">
+            <label>Numbers: <span id="numbersValue">0</span></label>
+            <input type="range" id="numbers" min="0" max="10" value="0">
+        </div>
+
+        <div class="slider-group">
+            <label>Symbols: <span id="symbolsValue">0</span></label>
+            <input type="range" id="symbols" min="0" max="10" value="0">
+        </div>
+
+        <button onclick="generatePassword()">Generate Password</button>
+
+        <div class="password-box">
+            <span class="password-text" id="password">Your password</span>
+            <button class="copy-btn" onclick="copyPassword()">Copy</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
